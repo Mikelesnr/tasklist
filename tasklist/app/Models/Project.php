@@ -10,15 +10,16 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $table = "projects";
-    public $timstamps = false;
+    protected $table = 'projects';
+    public $timestamps = false;
     protected $fillable = [
-        'id', //primary key, auto increment, integer
-        'name', //string
+        'id', // primary key, auto-increment, integer
+        'name', // string
     ];
 
-    //a project can have multiple tasks
-    public function tasks():HasMany{
+    // a project can have multiple tasks
+    public function tasks(): HasMany
+    {
         return $this->hasMany(Task::class);
     }
 }

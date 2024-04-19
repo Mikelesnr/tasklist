@@ -13,7 +13,6 @@ class ProjectsSeeder extends Seeder
      */
     public function run(): void
     {
-        //this will generate 3 projects
         for ($i = 1; $i <= 3; $i++) {
             Project::create([
                 'name' => "Project $i",

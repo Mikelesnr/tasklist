@@ -14,14 +14,13 @@ class TasksSeeder extends Seeder
      */
     public function run(): void
     {
-        //this will seed 10 projects
         $project_ids = Project::all()->pluck('id')->toArray();
 
         $now = now();
         $tasks = [];
         $project_priorities = [];
-        foreach($project_ids as $project_id){
-            $project_priorities[$project_id]=0;
+        foreach ($project_ids as $project_id) {
+            $project_priorities[$project_id] = 0;
         }
 
         for ($i = 1; $i <= 10; $i++) {
@@ -40,6 +39,5 @@ class TasksSeeder extends Seeder
         }
 
         Task::insert($tasks);
-        
     }
 }
