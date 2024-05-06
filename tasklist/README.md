@@ -2,6 +2,10 @@
 
 Laravel react full stack task manager demontrating crud, react laravel intergration with vite and building controllers with services. This project also shows how to create seeders and how to rum migrations. It has databases with one to many and many tot one relationships as well as cascading deleletion where if you remove a project it removes all asociated tasks
 
+## Comand to run Project
+
+> npm run build && php artisan serve
+
 ## Project Routes
 
 > Get data project tasks-> gets task by project
